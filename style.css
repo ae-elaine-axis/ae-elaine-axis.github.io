@@ -1,0 +1,26 @@
+/* офориление параграфов */
+
+body {
+	background: pink url(images/1.jpg) repeat-x fixed top left;
+}
+
+#page {
+	width:960;
+	margin: 0 auto;
+
+}
+
+.strong-red {
+font-weight: bold;
+color: red;
+}
+
+.light-blue {
+font-weight: bold;
+color:blue;
+}
+
+.light-blue {
+font-size: 18px;
+color:black;
+}
