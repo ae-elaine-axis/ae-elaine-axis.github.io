@@ -1,7 +1,57 @@
 /* офориление параграфов */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	background: pink url(images/1.jpg) repeat-x fixed top left;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	background: #EEEFF2 url(images/1.jpg) repeat-x top left;
 }
 
 #page {
@@ -11,16 +61,70 @@ body {
 }
 
 .strong-red {
-font-weight: bold;
-color: red;
+	margin-top:400;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	text-transform: normal;
+	text-indent: 30px;
+	letter-spacing: none;
+	word-spacing: none;
+	line-height: 30px;
+	font-family: 'Cuprum', sans-serif;
+	font-style: italic;
 }
 
-.light-blue {
-font-weight: bold;
-color:blue;
+ #styles li{
+ 	color: #061313;
+ 	font-family: "Cuprum", sans-serif;
+ 	list-style-image: url(images/photo.jpg);
+ 	border: 1px solid grey;
+ 	padding: 5px;
+ 	list-style: circle inside;
+ }
+
+ 
+ #styles li:hover {
+ 	background: white;
+ }
+
+ #navigation {
+ 	height: 65px;
+ }
+  #navigation ul li {
+  	float:left;
+  	position:relative;
+  }
+
+  #navigation ul li a {
+  color: #061313;
+  padding: 0 15px;
+  font-family:'Cuprum', sans-serif;
+  text-decoration: none;
+  line-height: 65px;
+  display:block;
+  height:65px;
+
 }
 
-.light-blue {
-font-size: 18px;
-color:black;
+#navigation ul li a:hover {
+background: #D9D9F2;
+text-decoration: underline;
+	}
+
+#navigation .dropdown {
+	position: absolute;
+	top:100%;
+	width: 150px;
+	background: #E0D5A3;
+	display: none;
+}
+
+#navigation li:hover .dropdown {
+	display:block;
+}
+
+#navigation .dropdown li {
+	width: 100%;
+	border: 1px solid grey;
 }
